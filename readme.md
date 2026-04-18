@@ -35,6 +35,9 @@ The agent is strictly limited to the following five tools. It is trained to emit
 - API Constraints: A primary challenge was an API versioning conflict in the trl library. The SFTTrainer initialization required a transition to the SFTConfig object to correctly handle the dataset_text_field and max_seq_length parameters without triggering type errors.
 - Tokenization: We identified a formatting discrepancy in the raw dataset where single-quoted arguments were causing JSON decoding failures. This was resolved by implementing a regex-based extraction layer in the data preparation script to ensure clean training tokens.
 
+## Model GGUF 
+Model gguf is available here
+https://drive.google.com/drive/folders/1s66nLoBOr5v5SlptpPY3BtKWhP2wHpXd?usp=sharing
 ## Setup and Installation
 1. Install dependencies:
    pip install -r requirements.txt
